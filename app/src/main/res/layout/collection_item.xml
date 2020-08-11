@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="410dp"
+    android:layout_height="300dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Collection_Position"
+        android:layout_width="380dp"
+        android:layout_height="241dp"
+        android:background="#e6e7eb"
+        app:cardElevation="12dp"
+        style="?android:attr/borderlessButtonStyle"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!--Main Image-->
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/collection_image"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Collection Text-->
+        <TextView
+            android:id="@+id/Collection_Text"
+            android:layout_width="125dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="100dp"
+            android:background="#f5f5f5"
+            android:text="Winter"
+            android:textColor="#000000"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <!--Collection Next Bottom-->
+        <Button
+            android:id="@+id/Collection_Next_Bottom"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="74dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="19dp"
+            android:layout_marginTop="190dp"
+            android:background="#f6f6f6"
+            android:text="SHOP NOW"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
